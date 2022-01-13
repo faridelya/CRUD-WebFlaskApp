@@ -1,0 +1,18 @@
+
+
+{% extends 'layout.html' %}
+
+{% block body %}
+ <div class="jumbotron text-center">
+   <h1> Welcome To WebFlaskApp</h1>
+   <p class="lead">This Application is built in Flask and Now we are Learning Flask From Scratch. This application 
+     have many features like create and login on to account and write articles and post it then you have option to edit 
+     and delete existing articles.
+   </p>
+   {% if session.logged_in == NULL%}
+      <a href="'/register" class="btn btn-warning btn-lg">Register</a>
+     <a href="'/login" class="btn btn-info btn-lg">Login</a>
+
+   {% endif %}
+ </div>
+{% endblock %}
